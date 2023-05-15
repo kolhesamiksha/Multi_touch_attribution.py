@@ -21,10 +21,6 @@ os.system("pip install pandas pmdarima statsmodels minio")
 from minio import Minio
 import statsmodels.api as sm
 
-ACCESS_KEY = "DNPD2SAYLBELJ423HCNU"
-SECRET_KEY = "zF7F6W93HS8vt+JKen4U17+zhcHiwH47AMuO3ap0"
-PUBLIC_BUCKET = "shared-storage"
-
 client = Minio(
         endpoint="minio-server.default.svc.cluster.local:9000",
         access_key=ACCESS_KEY,
